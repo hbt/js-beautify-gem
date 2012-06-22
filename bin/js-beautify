@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env ruby
 
-
-/usr/bin/env python ../js-beautify-copy/python/js-beautify $@
+args = ARGV.join(' ')
+script = File.join(File.absolute_path(File.dirname(__FILE__)), '../js-beautify-copy/python/js-beautify')
+exec("/usr/bin/env python #{script}  #{args}")
