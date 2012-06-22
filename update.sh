@@ -13,12 +13,6 @@ rm -rf js-beautify-copy
 # copy files
 cp -R js-beautify js-beautify-copy
 
-# create symbolic link
-cd bin
-rm -rf js-beautify
-ln -s ../js-beautify-copy/python/js-beautify .
-cd ..
-
 echo "copied files\n"
 
 # build the gem
