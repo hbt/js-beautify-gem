@@ -6,6 +6,11 @@ Ruby Gem for js-beautify
  
 * run the update.sh
 
+commit new changes
+rake git:release
+rake release
+
+
 == Copyright
 
 Copyright (c) 2012 hbt. See LICENSE.txt for
