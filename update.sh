@@ -5,6 +5,8 @@
 # update submodules
 git submodule sync && git submodule init && git submodule update && git submodule foreach git fetch origin && git submodule foreach git submodule init && git submodule foreach git submodule update
 
+echo "updated submodules\n"
+
 # delete current directory
 rm -rf js-beautify-copy
 
@@ -17,9 +19,11 @@ rm -rf js-beautify
 ln -s js-beautify-copy/python/js-beautify .
 cd ..
 
-echo "updated gem"
+echo "copied files\n"
 
 # build the gem
 rake version
 rake version:bump:patch
 rake version
+
+echo "updated version\n"
