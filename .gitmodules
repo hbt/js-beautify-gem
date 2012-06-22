@@ -1,3 +1,4 @@
 [submodule "js-beautify"]
 	path = js-beautify
-	url = git://github.com/einars/js-beautify.git
+	url = git@github.com:einars/js-beautify.git
+
